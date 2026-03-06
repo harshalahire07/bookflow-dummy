@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def browse_books(request):
+    return render(request, "books.html")

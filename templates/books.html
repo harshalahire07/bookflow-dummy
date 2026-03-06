@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Books | Campus Bookflow</title>
+    <meta name="description" content="Browse and buy second-hand books from your campus at affordable prices.">
+    <!-- Link to the dedicated books styling to avoid conflicts -->
+    <link rel="stylesheet" href="{% static 'css/books_style.css' %}">
+</head>
+
+<body class="books-body">
+
+    <header class="books-header">
+        <h1>Campus Bookflow</h1>
+        <nav class="books-nav">
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'browse_books' %}" class="active">Browse Books</a>
+            <a href="sell.html">Sell Book</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <div class="books-hero">
+        <h2>Find Your Next Read</h2>
+        <p>Save money by buying second-hand books from students in your campus.</p>
+        <div class="books-search-container">
+            <input type="text" placeholder="Search by title, author, or subject...">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <section class="books-section">
+        <div class="books-grid">
+            <!-- Book 1 -->
+            <div class="book-card">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="Data Structures">
+                <h3>Data Structures & Algorithms</h3>
+                <p class="author">By Narasimha Karumanchi</p>
+                <p class="price">₹200</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- Book 2 -->
+            <div class="book-card">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="Operating Systems">
+                <h3>Operating System Concepts</h3>
+                <p class="author">By Abraham Silberschatz</p>
+                <p class="price">₹150</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- Book 3 -->
+            <div class="book-card">
+                <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="Python Programming">
+                <h3>Fluent Python</h3>
+                <p class="author">By Luciano Ramalho</p>
+                <p class="price">₹450</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- Book 4 -->
+            <div class="book-card">
+                <img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="Database Systems">
+                <h3>Database System Concepts</h3>
+                <p class="author">By Silberschatz, Korth, Sudarshan</p>
+                <p class="price">₹300</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="books-footer">
+        <p>&copy; 2026 Campus Bookflow. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

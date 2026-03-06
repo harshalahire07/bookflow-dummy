@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Isolated scope for books page */
+.books-body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fafb;
+    color: #111827;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.books-header {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.books-header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #4f46e5;
+    margin: 0;
+}
+
+.books-nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #6b7280;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.books-nav a:hover,
+.books-nav a.active {
+    color: #4f46e5;
+}
+
+/* Hero Section */
+.books-hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.books-hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.books-hero p {
+    font-size: 1.125rem;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+}
+
+/* Search Bar */
+.books-search-container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    gap: 0.5rem;
+    background: white;
+    padding: 0.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.books-search-container input {
+    flex: 1;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    outline: none;
+    color: #111827;
+}
+
+.books-search-container button {
+    background: #4f46e5;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.books-search-container button:hover {
+    background: #4338ca;
+}
+
+/* Book Grid */
+.books-section {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.book-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.book-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-bottom: 1.25rem;
+    background: #f3f4f6;
+}
+
+.book-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #111827;
+}
+
+.book-card .author {
+    color: #6b7280;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.book-card .price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #4f46e5;
+    margin-bottom: 1.25rem;
+}
+
+.book-card button {
+    width: 100%;
+    padding: 0.75rem;
+    background: #f9fafb;
+    color: #4f46e5;
+    border: 2px solid #4f46e5;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.book-card button:hover {
+    background: #4f46e5;
+    color: white;
+}
+
+.books-footer {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: #6b7280;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
